@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BONO</title>
+</head>
+<body>
+
+    <script>
+
+        var nombre = "Juan";
+        var departamento = "lorem"
+        var sueldoDiario = 0
+        var antiguedad = 0
+        var diasTrabajos = 0
+        var subtotal = 0
+        var bono = 0
+        var total = 0
+
+
+        nombre = prompt("Ingrese su nombre");
+        departamento = prompt("Ingrese su departamento");
+        sueldoDiario = prompt("Ingrese su sueldo diario");
+        antiguedad = prompt("Ingrese su antiguedad trabajando");
+        diasTrabajos = prompt("Ingrese sus dias trabajados");
+        
+        
+        subtotal = diasTrabajos * sueldoDiario;
+
+        
+        //ver si aplica el bono
+        if (antiguedad > 15) {
+            bono = subtotal*.30
+
+        } else if(diasTrabajos < 15 ){
+
+            bono = subtotal*.15
+     
+        }
+
+        total = subtotal + bono;
+
+
+
+    </script>
+
+    <table>
+
+        <tr>
+            <th> Nombre</th>
+            <th> Departamento</th>
+            <th> Sueldo diario</th>
+            <th> Antiguedad</th>
+            <th> Dias trabajados</th>
+            <th> Subtotal</th>
+            <th> Bono</th>
+            <th> Total</th>
+        </tr>
+
+        <tr>
+            <td> <script> document.write(nombre)</script> </td>
+            <td> <script> document.write(departamento)</script> </td>
+            <td> <script> document.write(sueldoDiario)</script> </td>
+            <td> <script> document.write(antiguedad)</script> </td>
+            <td> <script> document.write(diasTrabajos)</script> </td>
+            <td> <script> document.write(subtotal)</script> </td>
+            <td> <script> document.write(bono)</script> </td>
+            <td> <script> document.write(total)</script> </td>
+         
+        </tr>
+
+    
+
+
+    </table>
+
+
+    
+</body>
+</html>
