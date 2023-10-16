@@ -30,7 +30,9 @@
 
         
         //ver si aplica el bono
-        if (antiguedad > 15) {
+        respuesta = confirm("Desea aplicar el bono?")
+        if (respuesta == true) {
+            if (antiguedad > 15) {
             bono = subtotal*.30
 
         } else if(diasTrabajos < 15 ){
@@ -38,6 +40,12 @@
             bono = subtotal*.15
      
         }
+        } else {
+            
+            
+        }
+
+        
 
         total = subtotal + bono;
 
